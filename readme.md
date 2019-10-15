@@ -4,7 +4,7 @@ about handling checked exceptions which are not in our control.
 He suggested to wrap them to unchecked exceptions.
 His reasoning is that there are unchecked exceptions that we do not handle anyway. 
 
-However, I think there is yet another solution, to wrap checked exception and return `Optional.empty()`.
+However, I think there is yet another solution, to wrap checked exceptions returning `Optional.empty()`.
 I borrowed his code from the blog and modified it with `Optional`:
 
 ```java
