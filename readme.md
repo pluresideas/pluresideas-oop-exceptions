@@ -2,7 +2,7 @@ Kapralov Sergey in his series of blog posts wrote his
 [opinion](https://www.pragmaticobjects.com/chapters/001_checked_exceptions.html)
 about handling checked exceptions which are not in our control.
 He suggested to wrap them to unchecked exceptions.
-His reasoning is that there are unchecked exceptions that we do not handle either. 
+His reasoning is that there are unchecked exceptions that we do not handle anyway. 
 
 However, I think there is yet another solution, to wrap checked exception and return `Optional.empty()`.
 I borrowed his code from the blog and modified with `Optional`:
